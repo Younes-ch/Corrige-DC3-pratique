@@ -98,7 +98,7 @@ While (not(eof(F))) Do
 	Close(F);
 end;
 Begin
-	Assign(F,'C:\PASCALXE\S�quence.txt');
+	Assign(F,'C:\PASCALXE\Séquence.txt'); // à éditer..
 	RempT(T,N);
 	RempV(V,T,K,N);
 	RempF(F,V,k);
