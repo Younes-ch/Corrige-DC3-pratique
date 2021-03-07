@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SBS\\Desktop\\Folders\\Programming\\CDC3\\Corrigé DC3 en C#\\DC3\\DC3.csproj": {}
+    "C:\\Users\\SBS\\Desktop\\Folders\\Programming\\CDC3\\Corrige-DC3-pratique\\Corrigé DC3 en C#\\DC3\\DC3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SBS\\Desktop\\Folders\\Programming\\CDC3\\Corrigé DC3 en C#\\DC3\\DC3.csproj": {
+    "C:\\Users\\SBS\\Desktop\\Folders\\Programming\\CDC3\\Corrige-DC3-pratique\\Corrigé DC3 en C#\\DC3\\DC3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SBS\\Desktop\\Folders\\Programming\\CDC3\\Corrigé DC3 en C#\\DC3\\DC3.csproj",
+        "projectUniqueName": "C:\\Users\\SBS\\Desktop\\Folders\\Programming\\CDC3\\Corrige-DC3-pratique\\Corrigé DC3 en C#\\DC3\\DC3.csproj",
         "projectName": "DC3",
-        "projectPath": "C:\\Users\\SBS\\Desktop\\Folders\\Programming\\CDC3\\Corrigé DC3 en C#\\DC3\\DC3.csproj",
+        "projectPath": "C:\\Users\\SBS\\Desktop\\Folders\\Programming\\CDC3\\Corrige-DC3-pratique\\Corrigé DC3 en C#\\DC3\\DC3.csproj",
         "packagesPath": "C:\\Users\\SBS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SBS\\Desktop\\Folders\\Programming\\CDC3\\Corrigé DC3 en C#\\DC3\\obj\\",
+        "outputPath": "C:\\Users\\SBS\\Desktop\\Folders\\Programming\\CDC3\\Corrige-DC3-pratique\\Corrigé DC3 en C#\\DC3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SBS\\AppData\\Roaming\\NuGet\\NuGet.Config",
