@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace DC3
 {
@@ -6,11 +7,10 @@ namespace DC3
     {
         static int N = default;
         static int k = -1;
-        static Sequence[] V = new Sequence[5];
+        static Sequence[][] V = new Sequence[5][];
         static int[] T = new int[20];
-
-
-        static int Saisie(int x)
+  
+        static void Main(string[] args)
         {
             bool canParse;
 
@@ -19,63 +19,51 @@ namespace DC3
                 do
                 {
                     Console.WriteLine("Donner la taille du tableau: ");
-                    canParse = int.TryParse(Console.ReadLine(), out x);
+                    canParse = int.TryParse(Console.ReadLine(), out N);
                 } while (!canParse);
-            } while ((x < 2) || (x > 20));
-            return x;
-        }   
+            } while ((N < 2) || (N > 20));
 
-        static void RempT(int[] T, int N)
-        {
-            bool canParse;
-            for (var i = 0; i < N; i++)
+            for (var h = 0; h < N; h++)
             {
-                    do
-                    {
-                        Console.WriteLine("Donner T[{0}]: ",i);
-                        canParse = int.TryParse(Console.ReadLine(), out T[i]);
-                    } while (!canParse);
+                do
+                {
+                    Console.WriteLine("Donner T[{0}]: ", h);
+                    canParse = int.TryParse(Console.ReadLine(), out T[h]);
+                } while (!canParse);
             }
-        }
-        static void RempV(Sequence[] V, int[] T, int k, int N)
-        {
+
             int i = -1;
+            int a = 0;
             string ch = "", ch1;
             do
             {
                 i += 1;
                 int j = i;
-                while ((T[j] % 2 == 0) && (j<= N))
+                while ((T[j] % 2 == 0) && (j <= N))
                 {
                     j = j + 1;
                 }
 
-                if(j - i >= 2)
+                if (j - i >= 2)
                 {
-                    k += 1;
-                    V[k].IndD = i;
-                    V[k].IndF = j - 1;
-                    V[k].Nbr = j - i;
-                    for (var c = i; c == j-1; c++)
+                    k++;
+                    V[a][k].IndD = i;
+                    V[a][k].IndF = j - 1;
+                    V[a][k].Nbr = j - i;
+                    a++;
+                    for (var c = i; c == j - 1; c++)
                     {
                         ch1 = T[c].ToString();
                         ch += ch1 + "|";
                     }
-                    V[k].Seq = ch.Remove(ch.Length);
-                    i = j-1;
+                    V[a][k].Seq = ch.Remove(ch.Length);
+                    i = j - 1;
                 }
-
             } while (i != N);
-        }
-        static void Main(string[] args)
-        {
 
-            N = Saisie(N);
-            RempT(T,N);
-            RempV(V, T, k, N);
-            for(var i = 0; i < k; i++)
+            for(var o = 0; o < k; o++)
             {
-                Console.WriteLine(V[k].Seq);
+                Console.WriteLine(V[o][k].Seq);
             }
         }
     }
