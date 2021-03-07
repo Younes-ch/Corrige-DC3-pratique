@@ -4,11 +4,6 @@ namespace DC3
 {
     class Program
     {
-        static int N = default;
-        static int k = -1;
-        static int[] T = new int[20];
-
-
         static int Saisie(int x)
         {
             bool canParse;
@@ -69,8 +64,17 @@ namespace DC3
         static void Main(string[] args)
         {
             Sequence[] V = new Sequence[5];
+            int[] T = new int[20];
+            int k = -1;
+            int N = default;
             N = Saisie(N);
+            Console.WriteLine("------------------------------");
+            Console.WriteLine(N);
             RempT(T, N);
+            foreach (var element in T)
+            {
+                Console.WriteLine(element);
+            }
             RempV(V, T, k, N);
             for (var i = 0; i < k; i++)
             {
