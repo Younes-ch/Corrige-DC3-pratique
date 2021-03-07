@@ -53,7 +53,7 @@ namespace DC3
                 if(j - i >= 2)
                 {
                     k += 1;
-                    V[k].setIndD(i);
+                    V[k].IndD = i;
                     V[k].IndF = j - 1;
                     V[k].Nbr = j - i;
                     for (var c = i; c == j-1; c++)

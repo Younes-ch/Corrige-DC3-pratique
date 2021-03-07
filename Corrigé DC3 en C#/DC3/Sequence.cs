@@ -9,15 +9,11 @@ namespace DC3
     class Sequence
     {
 
-        public int IndD;
-        public int IndF;
-        public int Nbr;
-        public string Seq; 
+        public int IndD { get; set; }
+        public int IndF { get; set; }
+        public int Nbr { get; set; }
+        public string Seq { get; set; }
 
-        public void setIndD(int indD)
-        {
-            this.IndD = indD;
-        }
 
     }
 }
