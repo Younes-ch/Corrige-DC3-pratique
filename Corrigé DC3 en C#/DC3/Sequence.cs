@@ -9,11 +9,9 @@ namespace DC3
     class Sequence
     {
 
-        public int IndD { get; set; }
-        public int IndF { get; set; }
-        public int Nbr { get; set; }
-        public string Seq { get; set; }
-
-
+        public int IndD = default;
+        public int IndF = default;
+        public int Nbr = default;
+        public string Seq = default;
     }
 }

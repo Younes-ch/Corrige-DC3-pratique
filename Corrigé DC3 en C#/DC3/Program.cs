@@ -6,7 +6,6 @@ namespace DC3
     {
         static int N = default;
         static int k = -1;
-        static Sequence[] V = new Sequence[5];
         static int[] T = new int[20];
 
 
@@ -69,7 +68,7 @@ namespace DC3
         }
         static void Main(string[] args)
         {
-
+            Sequence[] V = new Sequence[5];
             N = Saisie(N);
             RempT(T, N);
             RempV(V, T, k, N);
